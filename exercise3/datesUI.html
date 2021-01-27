@@ -9,7 +9,9 @@
                 background-color: rebeccapurple;
             }
         </style>
-        <script src="C:\Users\User\Desktop\dates.js"></script>
+        <script type="text/javascript" src="dates.js">
+
+</script>
     </head>
     <body>
         <div class="col-sm-6 background-right p-5 pb-5">
@@ -21,22 +23,22 @@
                             <h5>Date Simulator</h5>
                         </div>
                         <div class="card-text">
-                            <form class="form-group">
+                            <form class="form-group" id="date_form" onsubmit="return calcNewDate();">
                                 <div class="form-control">
-                                    <input type="text" class="form-control" placeholder="Enter the date (MM/DD/YYYY)" name="d1">  
+                                    <input type="text" class="form-control" placeholder="Enter the date (MM/DD/YYYY)" id="d1">  
                                 </div>
                                 <div class="form-control">
-                                    <input type="text" class="form-control" placeholder="Enter the date (MM/DD/YYYY)" name="d2">  
+                                    <input type="text" class="form-control" placeholder="Enter the date (MM/DD/YYYY)" id="d2">  
                                 </div>
                                 <br>
                                 <div class ="form-row">
                                     <div class="form-control text-center border-0">
-                                        <button onclick="calcNewDate()" class="btn btn-block btn-warning" name="calcDate">Calculate New Date</button>
+                                        <input type="submit" value="Calculate New Date"  onclick="return calcNewDate();" class="btn btn-block btn-warning">
                                     </div>
                                 </div>
                                 <br>
                                 <div class="form-control">
-                                    <input type= "text" class="form-control" placeholder="Difference between the dates">  
+                                    <input type= "text" class="form-control" id="diffdate" placeholder="Difference between the dates">  
                                 </div>
                             </form>
                         </div>
